@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwards - School of Wizardy and Witchcraft</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- 1.1. Header section -->
+        <header>
+            <div class="container">
+                <!-- Main Navbar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid p-0">
+                        <a class="nav-logo" href="index.html">
+                            <figure><img src="assets/images/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button onclick="open_aside()" type="button" aria-label="openSide">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">Houses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Team.html">Games & Activities</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link" href="#">Houses Details <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="gryffindor.html">Gryffindor</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="slytherin.html">Slytherin</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="ravenclaw.html">Ravenclaw</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="hufflepuff.html">Hufflepuff</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+                <!-- Side Navbar for Small Screen -->
+                <aside>
+                    <div id="sideNav">
+                        <div class="d-flex nav-logo">
+                            <figure class="navbar-brand">
+                                <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+                            </figure>
+                            <button class="fa-solid fa-xmark" onclick="close_aside()" aria-label="closeSide"></button>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Team.html">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <div id="slid-btn">
+                                    <button>Pages</button>
+                                    <i class="fa-solid fa-caret-down ps-2"></i>
+                                </div>
+                                <ul id="slid-drop">
+                                    <li><a href="Blog.html">Our Blog</a></li>
+                                    <li><a href="BlogDetails.html">Blog Detail</a></li>
+                                    <li><a href="CaseStudies.html">Case Studies</a></li>
+                                    <li><a href="CaseStudiesDetail.html">Case Studies Detail</a></li>
+                                    <li><a href="Testimonial.html">Testimonials</a></li>
+                                    <li><a href="Faq.html">FAQs</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="ComingSoon.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <hr>
+        </header>
+        <!-- End of 1.1. Header section -->
+        <section class="Hero">
+            <div class="container">
+                <div class="position-relative">
+                    <figure>
+                        <img src="assets/images/index/hero.png" alt="heroImage">
+                    </figure>
+                    <div class="position-absolute d-flex align-items-end">
+                        <div class="d-flex flex-column">
+                            <h1>Welcome to Hogwarts</h1>
+                            <p>Step into a world of wonder and enchantment at Hogwarts School of Witchcraft and Wizardry. From the grandeur of the Great Hall to the mystery of the Forbidden Forest, discover a place where magic isn't just a subject, but a way of life.</p>
+                            <div class="pt-2"><a href="#" class="hover1">Begin Your Journey</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="About">
+            <div class="container">
+                <div>
+                    <h2>About Us</h2>
+                    <p>At Hogwarts, we blend centuries of magical tradition with a commitment to innovation, guiding each student through an extraordinary journey of learning and discovery.</p>
+                </div>
+                <div class="row gy-4 pt-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/book.jpg" alt="">
+                            </figure>
+                            <h3>A Timeless Tradition</h3>
+                            <p>Founded over a thousand years ago by legendary witches and wizards, Hogwarts has been a cornerstone of magical education, blending tradition with innovation</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/castle.jpg" alt="">
+                            </figure>
+                            <h3>Shaping the Future of Magic</h3>
+                            <p>We are dedicated to nurturing each student's unique magical talents, fostering a sense of community, and preparing them for success in both magical and non-magical worlds.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/professor.jpg" alt="">
+                            </figure>
+                            <h3>Expert Educators</h3>
+                            <p>Our experienced faculty members are committed to providing guidance and support, ensuring that every student achieves their full potential.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/hall.jpg" alt="">
+                            </figure>
+                            <h3>A Magical Community</h3>
+                            <p>Hogwarts is more than a school; it’s a vibrant community where students build lifelong friendships, embrace challenges, and discover their true potential.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Houses">
+            <div class="container">
+                <div>
+                    <h2>The Four Houses of Hogwarts</h2>
+                    <p>Explore the unique qualities and rich traditions of each Hogwarts House, where every student finds their place and identity.</p>
+                    <div class="py-2"><a href="#" class="hover1">Learn More</a></div>
+                </div>
+                <div class="row gy-2 gy-sm-4 pt-4">
+                    <div class="col-6 col-md-3">
+                        <a href="#">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/house1.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/house2.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/house3.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a href="#">
+                            <figure>
+                                <img class="w-100" src="assets/images/index/house4.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Slider">
+            <div class="container">
+                <div>
+                    <h2>Guiding Lights: Our Faculty and Staff</h2>
+                    <p>Meet the dedicated witches and wizards. Our esteemed faculty is committed to providing world-class magical education, guiding students with passion, expertise, and a touch of enchantment.</p>
+                </div>
+                <div class="StaffSlider d-flex gap-3 w-100 pt-4"></div>
+            </div>
+        </section>
+        <section class="Slider pt-0">
+            <div class="container">
+                <div>
+                    <h2>Guiding Lights: Our Faculty and Staff</h2>
+                    <p>Meet the dedicated witches and wizards. Our esteemed faculty is committed to providing world-class magical education, guiding students with passion, expertise, and a touch of enchantment.</p>
+                </div>
+                <div class="StudentSlider d-flex gap-3 w-100 pt-4"></div>
+            </div>
+        </section>
+        <section class="Games">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column h-100">
+                            <h2>Magical Games & Adventures</h2>
+                            <p class="flex-grow-1">Step into the magical world of Hogwarts with a variety of enchanting games and activities that bring the magic of the wizarding world to life. Whether you’re looking for interactive challenges, magical sports, or creative crafts, there’s something for every witch and wizard to enjoy.</p>
+                            <ul class="d-flex flex-column gap-2 pb-4 pb-lg-0">
+                                <li><p>Quidditch Matches</p></li>
+                                <li><p>Spell Casting Challenges</p></li>
+                                <li><p>Potion Brewing Workshops</p></li>
+                                <li><p>Magical Creatures Encounter</p></li>
+                                <li><p>Hogwarts Trivia Quiz</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column gap-3">
+                            <figure class="d-flex gap-3">
+                                <img src="assets/images/index/quidditch.jpg" alt="">
+                                <img class="w-25" src="assets/images/index/spell.jpg" alt="">
+                            </figure>
+                            <figure class="d-flex gap-3">
+                                <img class="w-25" src="assets/images/index/potion.jpg" alt="">
+                                <img src="assets/images/index/creature.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
