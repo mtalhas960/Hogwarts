@@ -1,0 +1,240 @@
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 65px;
+        line-height: 55px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 39px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h6 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    a,
+    input {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 50px;
+        line-height: 45px;
+        word-spacing: -4px;
+    }
+
+    h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    h5 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    h6 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .hover1 {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+}
+
+/* 1.1. Header section */
+@media (max-width: 1200px) {
+    .navbar-collapse ul:nth-child(1) {
+        gap: 12px;
+    }
+
+    #sideNav #slid-btn button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    #sideNav #slid-btn button {
+        font-size: 18px;
+    }
+
+    .navbar {
+        padding: 12px 0px;
+        margin: auto;
+        width: 99%;
+    }
+
+    .navbar .container-fluid .navbar-collapse {
+        display: none !important;
+    }
+
+    .navbar .container-fluid button {
+        display: block;
+    }
+
+    .navbar .container-fluid .hover1 {
+        display: none;
+    }
+
+    aside .d-flex {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 18px 0px;
+    }
+
+    #sideNav #slid-btn button,
+    #slid-btn .fa-caret-down {
+        font-size: 16px;
+    }
+
+    .navbar .container-fluid button {
+        padding: 8px 12px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 0px;
+    }
+
+    aside .fa-xmark {
+        font-size: 16px;
+    }
+
+    .navbar .container-fluid button {
+        padding: 6px 10px;
+        font-size: 20px;
+    }
+
+    #sideNav a {
+        font-size: 16px;
+    }
+}
+
+/* End of 1.1. Header section */
+@media (max-width: 991px) {
+    .Hero .flex-column {
+        width: 100%;
+    }
+
+    .Hero img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .Hero .position-absolute {
+        padding: 40px 20px;
+    }
+
+    .Games {
+        text-align: center;
+    }
+
+    .Games li {
+        width: 260px;
+        margin-inline: auto;
+        text-align: left;
+    }
+
+    .Games h2{
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Hero .flex-column {
+        gap: 10px;
+    }
+
+    .Hero img {
+        height: 500px;
+    }
+
+    .Houses .row {
+        --bs-gutter-x: 8px
+    }
+}
+
+@media (max-width: 360px) {
+    .Games .gap-3 {
+        gap: 10px !important;
+        flex-direction: column;
+    }
+
+    .Games img{
+        width: 100%;
+    }
+
+    .Games .w-25 {
+        width: 100% !important;
+    }
+}
